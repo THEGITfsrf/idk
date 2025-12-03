@@ -4,10 +4,10 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = "/temp";
+const __dirname = path.dirname(__filename);
 
-const dbPath = path.join(__dirname, '..', 'data', 'users.db');
-const dbDir = path.dirname(dbPath);
+const dbDir = '/tmp'; // Vercel's only writable folder
+const dbPath = path.join(dbDir, 'users.db');
 
 if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
