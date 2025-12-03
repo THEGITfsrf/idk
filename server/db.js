@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = "/temp";
 
 const dbPath = path.join(__dirname, '..', 'data', 'users.db');
 const dbDir = path.dirname(dbPath);
