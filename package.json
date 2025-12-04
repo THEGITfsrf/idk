@@ -30,6 +30,8 @@
     "http-proxy-middleware": "^3.0.5",
     "node-fetch": "^3.3.2",
     "nodemailer": "^7.0.11",
+    "sqlite3": "^5.1.6",
+    "sqlite": "^4.2.1",
     "proper-lockfile": "^4.1.2",
     "wisp-server-node": "^1.1.3"
   },
