@@ -8,6 +8,13 @@ importers:
 
   .:
     dependencies:
+      sqlite3:
+       specifier: ^5.1.6
+       version: 5.1.6
+
+      sqlite:
+       specifier: ^4.2.1
+       version: 4.2.1
       '@mercuryworkshop/bare-mux':
         specifier: ^2.1.7
         version: 2.1.7
@@ -83,7 +90,12 @@ importers:
         version: 22.21.1
 
 packages:
-
+  # Under packages
+  'sqlite3@5.1.6':
+    resolution: {integrity: sha512-<hash-of-package>}
+  
+  'sqlite@4.2.1':
+    resolution: {integrity: sha512-<hash-of-package>}
   '@mercuryworkshop/bare-mux@2.1.7':
     resolution: {integrity: sha512-BUamyc7jsIFbWQVVWjVjaD+Wot77EPwolkrbP3UuIs6QeHR1RY52+IR2fq3GkRAbOOrAZNT7EgZSsupkh1NowQ==}
 
